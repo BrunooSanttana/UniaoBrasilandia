@@ -1,113 +1,223 @@
 import Image from "next/image";
+import {register} from 'swiper/element-bundle';
+
+register();
+import 'swiper/css';
+import 'swiper/css/navigation'; 
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+
+{/* CABEÇALHO DA PAGINA  */}
+      <header className="w-full bg-custom-blue py-4 px-24 flex items-center justify-between">
+        <div>
+          <Image src="/newLogo.png" alt="Logo" width={120} height={40} />
         </div>
-      </div>
+        <nav className="flex">
+          <a href="#elenco" className="text-white mr-4">Elenco</a>
+          <a href="#diretoria" className="text-white mr-4">Diretoria</a>
+          <a href="#galeria" className="text-white mr-4">Galeria</a>
+          <a href="#news" className="text-white mr-4">Infos </a>
+          <a href="#patrocinio" className="text-white mr-4">Patrocinadores</a>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          {/*  <a href="#news" className="text-white mr-4">Noticias </a>
+          <a href="#titulos" className="text-white mr-4">Titulos</a> 
+          */}
+    
+          <a href="#contato" className="text-white mr-4">Contato</a>
+        </nav>
+      </header>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+ {/* HISTORIA  */}
+      <main className="w-full items-center justify-between p-30"> <br></br><br></br>
+      <section id="nossa-historia" className="max-w-4xl mx-auto mb-28 flex">
+    <div className="w-1/2 mr-8">
+        <h2 className="text-3xl font-bold mb-4 text-custom-gold">Nossa História</h2>
+        <p className="text-lg text-gray-700 mb-8">
+            O União Brasilândia, o famoso UVB surgiu em 10/04/2013, em uma pequena comunidade apaixonada pelo esporte. Tudo começou com um grupo de amigos que compartilhavam o amor pelo futebol e sonhavam em formar uma equipe para representar seu bairro. <br /><br />
+            O espírito de camaradagem e família tornaram-se as marcas registradas do time, inspirando não apenas os jogadores, mas toda a comunidade.<br /><br />
+            Hoje, o União Brasilândia continua a escrever sua história, celebrando suas raízes humildes e olhando para o futuro com esperança e determinação, eles continuam a defender suas cores em cada partida que disputam.<br />
+        </p>
+    </div>
+    <div className="w-1/2 flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center"> {/* Adicionado flex e flex-col */}
+            <Image src="/elencoAntigo.jpeg" alt="Primeiro Elenco do União" width={800} height={300} />
+            <p className="text-lg text-custom-blue mt-4">Primeiro Elenco do União</p>
+        </div>
+    </div>
+</section>
+<section id="titulos" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white"> 
+    <div className="flex items-center mb-4"> {/* Contêiner flexível */}
+        <h2 className="text-3xl font-bold mr-2 text-custom-gold">TÍTULOS CONQUISTADOS</h2> {/* Título */}
+        <img width="40" height="40" src="https://img.icons8.com/office/16/trophy--v1.png" alt="trophy--v1"/> {/* Ícone */}
+    </div>
+    <ul className="text-lg text-custom-blue">
+      <li>Festival 2023</li>
+        <li>Festival bola show 2023</li>
+        <li>Festival dia das Crianças 2021</li>
+        <li>Festival dia do trabalho 2019</li>
+        <li>Festival Conciencia Negra 2018</li>
+        <li>Festival Amigos do Porto 2018</li>
+        <li>Festival 2017</li>
+        <li>Festival 7 de Setembro 2017</li>
+        <li>Festival dia das crianças 2016</li>
+    </ul>
+</section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+
+ {/* ELENCO  */}
+         <section id="elenco" className="w-full mx-auto mb-28 bg-custom-gold flex flex-col items-center justify-center ">
+            <div className="w-full text-center mb-8"> <br></br> <br></br>
+              <h3 className="text-3xl font-bold mb-4 text-custom-blue">ELENCO ATUAL</h3>
+              <p className="text-custom-blue">       veja nossos jogadores - EM DESENVOLVIMENTO          </p>
+            </div>
+            <div className="w-full grid grid-cols-1">
+            <div className="flex justify-center">
+              <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+            </div>
+          </div>  <br></br><br></br><br></br><br></br>
+      </section>
+
+ {/* DIRETORIA  */}
+        <section id="diretoria" className="max-w-full mx-auto bg-custom-white mb-28 flex flex-col items-center justify-center">
+          <div className="w-3/2 text-center mb-28">
+            <h2 className="text-3xl font-bold mb-4 text-custom-gold">DIRETORIA</h2>
+              <p className="text-custom-blue">
+                    Conheça nossos diretores - EM DESENVOLVIMENTO  
+              </p>
+          </div>
+          <div className="w-full grid grid-cols-3 gap-4">
+              <div className="flex justify-center">
+                  <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-4" />
+              </div>  
+              <div className="flex justify-center">
+                  <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-4" />
+              </div>   <div className="flex justify-center">
+                  <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-4" />
+              </div>  
+              </div><br></br><br></br><br></br><br></br>
+        </section>
+
+ {/* GALERIA  */}
+        <section id="galeria" className="max-w-full mx-auto mb-8 flex flex-col items-center justify-center bg-custom-gold">
+          <div className="w-full text-center ">
+                <h2 className="text- font-bold mb-4 text-custom-blue">GALERIA UVB</h2>
+                <p className="text-lg text-gray-700">
+                  {/* A */}
+                  confira algumas fotos
+                </p>
+              </div>
+            <div className="w-full grid grid-cols-1 ">
+            <div className="flex justify-center">
+              <Image src="/elencoatual.jpeg" alt="Imagem" width={800} height={800}  />
+            </div>
+          </div>  <br></br>
+        </section>
+
+ {/* TITULOS e JOGOS */}
+ <div className="max-w-full mx-auto mb-8 flex flex-col md:flex-row"> {/* Adicionado flex-col e md:flex-row */}
+    
+ <img src="/newLogo.png" alt="Logo União" className="hidden md:block max-w-md mx-auto mb-4" style={{ maxWidth: '300px' }} />
+    <section id="news" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white">
+    <h2 className="text-3xl font-bold mb-4 text-custom-gold">ÚLTIMOS JOGOS</h2>
+    <ul className="text-lg text-custom-blue">
+        <li style={{ maxWidth: '200px' }}>União 2 x 3 Inter 07</li>
+        <li style={{ maxWidth: '200px' }}>União 4 x 3 Inter 07</li> <br></br>
+        <li style={{ maxWidth: '200px' }}>União 3 x 2 Colombia</li>
+        <li style={{ maxWidth: '200px' }}>União 3 x 0 Colombia</li><br></br>
+        <li style={{ maxWidth: '200px' }}>União 3 x 7 Real Fut7</li>
+        <li style={{ maxWidth: '200px' }}>União 4 x 5 Real Fut7</li><br></br>
+        <li style={{ maxWidth: '200px' }}>União 3 x 6 Toksai FC</li>
+        <li style={{ maxWidth: '200px' }}>União 8 x 3 Toksai FC</li><br></br>
+        <li style={{ maxWidth: '200px' }}>União 3 x 2 Wolves</li>
+        <li style={{ maxWidth: '200px' }}>União 4 x 2 Wolves</li>
+    </ul>
+</section>
+
+  <section id="news" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white"> {/* Alterado w-full para md:w-1/2 */}
+        <h2 className="text-3xl font-bold mb-4 text-custom-gold">GOLS 2024</h2>
+        <ul className="text-lg text-custom-blue">
+            <li>Marcos 10</li>
+            <li>Saraiva 6  </li>
+            <li>Michel 6 </li>
+            <li>Wilsão 5 </li>
+            <li>André 5</li>
+            <li>Deto 5</li>
+            <li>Juninho 4 </li>
+            <li>Jhow Jhow  4</li>
+            <li>Will 3</li>
+            <li>Wellington 2 </li>
+            <li>B. Jesus  1</li>
+        </ul>
+    </section>
+    <section id="news" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white"> {/* Alterado w-full para md:w-1/2 */}
+        <h2 className="text-3xl font-bold mb-4 text-custom-gold">ASSISTENCIAS 2024</h2>
+        <ul className="text-lg text-custom-blue">
+            <li>André 5</li>
+            <li>Marcos 4</li>
+            <li>Saraiva 3</li>
+            <li>Michel 3</li>
+            <li>Dodo 3</li>
+            <li>Aldo 3</li>
+            <li>Deto 2</li>
+            <li>Juninho 2</li>
+            <li>Dielson 2</li>
+            <li>Wilsão 1</li>
+        </ul>
+    </section>
+</div>
+<section id="patrocinio" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white">
+    <h2 className="text-3xl font-bold mb-4 text-custom-gold">PATROCINADORES</h2>
+    <div className="flex justify-center">
+        <div className="m-4">
+            <a href="https://www.instagram.com/cimportsstore/" target="_blank" className="text-lg text-custom-blue mt-2">C imports.store</a>
+        </div>
+        <div className="m-4" style={{ height: '80px' }}>
+            <p className="text-lg text-custom-blue mt-2">Flavio Frutas</p>
+        </div>
+        <div className="m-4" style={{ height: '80px' }}>
+            <p className="text-lg text-custom-blue mt-2">Bar do Arroz</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+      </main>
+
+ {/* RODAPE  */}
+      <footer id="contato" className="w-full bg-custom-gold py-4 px-24 flex flex-col items-center justify-center text-custom-blue">
+          <div className="container mx-auto flex justify-between items-center">
+            <div>
+                <h3 className="text-lg font-bold mb-2">Redes Sociais</h3>
+                  <ul className="flex space-x-4">
+                    <li>
+                      <a href="https://www.instagram.com/uniao_brasilandiafs/" target="_blank" className="hover:text-gray-400">                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                        </svg>
+                      </a>
+                      {/*<a href="https://www.instagram.com/uniao_brasilandiafs/" target="_blank" className="hover:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+                      </svg>
+                      </a>
+                      */}
+                    </li>
+                 </ul>
+              </div>
+            <p className="text-sm"> <strong> Desenvolvido por Bruno Santana, famoso JESUS do União </strong></p>
+            <div>
+              <p className="text-sm"><strong> &copy;2024 União Brasilândia. Todos os direitos reservados.</strong></p>
+            </div>
+          </div>
+        </footer>
+   </div>
   );
 }

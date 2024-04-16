@@ -2,32 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Definição das cores personalizadas */
+@layer components {
+  .bg-custom-blue {
+    --bg-custom-blue: #011966; /* Azul */
+    background-color: var(--bg-custom-blue);
+  }
+
+  .bg-custom-gold {
+    --bg-custom-gold: #AA8506; /* Dourado */
+    background-color: var(--bg-custom-gold);
+  }
+  .bg-custom-black {
+    --bg-custom-black: #000000; /* preto */
+    background-color: var(--bg-custom-black);
+  }
+  .bg-custom-white {
+    --bg-custom-white: #ffffff; /* branco */
+    background-color: var(--bg-custom-white);
+  }
+  
+  .text-custom-black {
+    --text-custom-black: #000000; /* Preto */
+    color: var(--text-custom-black);
+  }
+
+  .text-custom-white {
+    --text-custom-white: #ffffff; /* Branco */
+    color: var(--text-custom-white);
+  }
+  .text-custom-gold {
+    --text-custom-gold: #AA8506; /* gold */
+    color: var(--text-custom-gold);
+  }
+  .text-custom-blue {
+    --text-custom-blue: #011966; /* blue */
+    color: var(--text-custom-blue);
+  }
+
 }
