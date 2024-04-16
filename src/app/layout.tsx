@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Uniao",
-  description: "time de futebol",
+  title: "União Brasilândia",
+  description: "Time de Futebol Society",
 };
 
 export default function RootLayout({
