@@ -39,6 +39,8 @@ export default function Noticias() {
 
       </section>
 
+      <hr className="border-1 text-custom-gold w-full mt-5" />
+
       <section className="p-5 flex-grow">
       <h1 className="text-3xl font-bold text-custom-blue mt-5">
           <Link href="/uniaoXIGuerreiros" className="text-custom-blue hover:text-custom-gold">
@@ -53,6 +55,9 @@ export default function Noticias() {
         <p className="text-custom-blue"> img da partida </p>
       </section>
 
+      <hr className="border-1 text-custom-gold w-full mt-5" />
+
+
       <section className="p-5 flex-grow">
         <h1 className="text-3xl font-bold text-custom-blue mt-5">
           <Link href="/uniaoInter07" className="text-custom-blue hover:text-custom-gold">
@@ -65,6 +70,9 @@ export default function Noticias() {
         </div>
         <p className="text-custom-blue"> img da partida </p>
       </section>
+      
+      <hr className="border-1 text-custom-gold w-full mt-5" />
+
 
       <section className="p-5 flex-grow">
         <h1 className="text-3xl font-bold text-custom-blue mt-5">
