@@ -33,7 +33,7 @@ export default function Home() {
           <section id="nossa-historia" className="max-w-4xl mx-auto mb-28 flex">
           <div className="w-1/2 mr-8">
               <h2 className="text-3xl font-bold mb-4 text-custom-gold">Nossa História</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <p className="text-lg text-custom-blue mb-8">
                   O União Brasilândia, o famoso UVB surgiu em 10/04/2013, em uma pequena comunidade apaixonada pelo esporte. Tudo começou com um grupo de amigos que compartilhavam o amor pelo futebol e sonhavam em formar uma equipe para representar seu bairro. <br /><br />
                   O espírito de camaradagem e família tornaram-se as marcas registradas do time, inspirando não apenas os jogadores, mas toda a comunidade.<br /><br />
                   Hoje, o União Brasilândia continua a escrever sua história, celebrando suas raízes humildes e olhando para o futuro com esperança e determinação, eles continuam a defender suas cores em cada partida que disputam.<br />
@@ -69,12 +69,21 @@ export default function Home() {
 
 
 {/* ELENCO */}
-<section id="elenco" className="w-full mx-auto mb-52 bg-custom-gold flex flex-col items-center justify-center pb-52">
-  <div className="w-full text-center mb-5"> <br></br><br></br><br></br><br></br><br></br>
-    <h3 className="text-3xl font-bold mb-2 text-custom-blue mt-10">ELENCO ATUAL</h3>
+<section id="elenco" className="w-full mx-auto mb-12 bg-custom-gold flex flex-col items-center justify-center pb-12">
+  <div className="w-full text-center mb-5">
+    <h3 className="text-3xl font-bold mb-2 text-custom-blue mt-5">ELENCO ATUAL</h3>
     <p className="text-custom-blue">Veja nossos jogadores - EM DESENVOLVIMENTO</p>
   </div>
-  <div className="w-full grid grid-cols-3">
+  <div className="w-full grid grid-cols-7">
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div> 
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div> 
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div> 
     <div className="flex justify-center">
       <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
     </div> 
@@ -84,6 +93,73 @@ export default function Home() {
     <div className="flex justify-center">
       <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
     </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    <div className="flex justify-center">
+      <Image src="/newLogo.png" alt="Imagem" width={300} height={300} className="m-3" />
+    </div>
+    
   </div> <br></br><br></br><br></br><br></br><br></br>
 </section>
 
@@ -128,7 +204,7 @@ export default function Home() {
               </div>
             <div className="w-full grid grid-cols-1 ">
             <div className="flex justify-center">
-              <Image src="/elencoatual.jpeg" alt="Imagem" width={800} height={800}  />
+              <Image src="/elencoatual.jpeg" alt="Imagem" width={900} height={900}  />
             </div>
           </div>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         </section >
