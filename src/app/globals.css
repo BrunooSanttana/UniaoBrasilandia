@@ -8,6 +8,31 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Seletor para os ícones */
+.icon-link {
+  /* Cor padrão do texto */
+  color: white;
+  /* Transição suave para mudanças de cor */
+  transition: color 0.3s ease;
+  /* Transição suave para o efeito de zoom */
+  transition: transform 0.3s ease;
+}
+
+/* Quando o mouse passar sobre os ícones */
+.icon-link:hover {
+  /* Mudança de cor */
+  color: #AA8506;
+  /* Efeito de zoom */
+  transform: scale(1.1);
+}
+
+
+
+
 /* Definição das cores personalizadas */
 @layer components {
   .bg-custom-blue {
