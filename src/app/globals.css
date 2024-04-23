@@ -30,45 +30,109 @@ html {
   transform: scale(1.1);
 }
 
-
-
-
 /* Definição das cores personalizadas */
 @layer components {
   .bg-custom-blue {
-    --bg-custom-blue: #011966; /* Azul */
+    --bg-custom-blue: #011966;
+    /* Azul */
     background-color: var(--bg-custom-blue);
   }
 
   .bg-custom-gold {
-    --bg-custom-gold: #AA8506; /* Dourado */
+    --bg-custom-gold: #AA8506;
+    /* Dourado */
     background-color: var(--bg-custom-gold);
   }
+
   .bg-custom-black {
-    --bg-custom-black: #000000; /* preto */
+    --bg-custom-black: #000000;
+    /* preto */
     background-color: var(--bg-custom-black);
   }
+
   .bg-custom-white {
-    --bg-custom-white: #ffffff; /* branco */
+    --bg-custom-white: #ffffff;
+    /* branco */
     background-color: var(--bg-custom-white);
   }
-  
+
   .text-custom-black {
-    --text-custom-black: #000000; /* Preto */
+    --text-custom-black: #000000;
+    /* Preto */
     color: var(--text-custom-black);
   }
 
   .text-custom-white {
-    --text-custom-white: #ffffff; /* Branco */
+    --text-custom-white: #ffffff;
+    /* Branco */
     color: var(--text-custom-white);
   }
+
   .text-custom-gold {
-    --text-custom-gold: #AA8506; /* gold */
+    --text-custom-gold: #AA8506;
+    /* gold */
     color: var(--text-custom-gold);
   }
+
   .text-custom-blue {
-    --text-custom-blue: #011966; /* blue */
+    --text-custom-blue: #011966;
+    /* blue */
     color: var(--text-custom-blue);
   }
 
+  /* Responsividade para ícones */
+  @media screen and (max-width: 768px) {
+    .icon-link {
+      margin-right: 10px;
+    }
+  }
+}
+
+/* Definição das cores personalizadas */
+@layer components {
+
+  /* Definindo estilos para o header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Estilos para o logo */
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para o menu de navegação */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Estilos para os itens do menu */
+  .nav-item {
+    margin: 5px;
+  }
+
+  /* Responsividade para o header */
+  @media screen and (min-width: 758px) {
+    header {
+      flex-direction: row;
+      justify-content: justify-between;
+    }
+
+    .logo {
+      margin-bottom: 5px;
+    }
+
+    nav {
+      flex-direction: row;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+    }
+  }
 }
