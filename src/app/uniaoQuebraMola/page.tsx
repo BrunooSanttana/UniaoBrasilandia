@@ -29,7 +29,7 @@ export default function uniaoQuebraMola() {
           </Link>
       </h1>
         <p className="text-xs text-custom-blue" > 20/04/2024 - Assessoria de imprensa</p>
-        <p className="text-3x1 font-bold text-custom-gold mt-10">"UFFAAAA"</p>
+        <p className="text-3x1 font-bold text-custom-gold mt-10">&ldquo;UFFAAAA&rdquo;</p>
 
         <p className="text-custom-blue mt-5">
           No último jogo pela Liga Ouro, o União enfrentou a equipe Quebra-Mola em uma partida emocionante. Os dois jogos foram disputados com grande intensidade, resultando em uma vitória para cada lado.<br></br>
