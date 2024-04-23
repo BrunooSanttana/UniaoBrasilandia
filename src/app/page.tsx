@@ -49,7 +49,7 @@ export default function Home() {
 <section id="titulos" className="w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white"> 
     <div className="flex items-center mb-4 mt-10">
         <h2 className="text-3xl font-bold mr-2 text-custom-gold">TÍTULOS CONQUISTADOS</h2> {/* Título */}
-        <img width="40" height="40" src="https://img.icons8.com/office/16/trophy--v1.png" alt="trophy--v1"/> {/* Ícone */}
+        <Image width="40" height="40" src="https://img.icons8.com/office/16/trophy--v1.png" alt="trophy--v1"/> {/* Ícone */}
     </div>
     <ul className="text-lg text-custom-blue">
       <li>Festival 2023</li>
@@ -215,7 +215,7 @@ export default function Home() {
     {/* TITULOS e JOGOS */ }
     < div className = "max-w-full mx-auto mb-8 flex flex-col md:flex-row" > {/* Adicionado flex-col e md:flex-row */ }
 
-      < img src = "/newLogo.png" alt = "Logo União" className = "hidden md:block max-w-md mx-auto mb-4" style = {{ maxWidth: '300px' }
+      < Image src = "/newLogo.png" alt = "Logo União" className = "hidden md:block max-w-md mx-auto mb-4" style = {{ maxWidth: '300px' }
 } />
   < section id = "news" className = "w-full md:w-1/2 mx-auto mb-8 flex flex-col items-center justify-center bg-custom-white" >
     <h2 className="text-3xl font-bold mb-4 text-custom-gold mt-10">ÚLTIMOS 5 JOGOS</h2>
