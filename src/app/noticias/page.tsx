@@ -22,89 +22,106 @@ export default function Noticias() {
         </nav>
       </header>
 
-  {/* NOTICIAS */}
-<section className="p-5 flex-grow">
-  <div className="flex">
-    <div>
-      <div className="flex justify-left">
-        <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
-      </div>
-      <p className="text-custom-blue">img da partida</p>
-    </div>
-    <div className="ml-4">
-  <h1 className="text-3xl font-bold text-custom-blue mt-10">
-    <Link href="/uniaoQuebraMola" className="text-custom-blue hover:text-custom-gold">
-      União x Quebra Mola
-    </Link>
-  </h1>
-  <p className="text-xs text-custom-blue">20/04/2024 - Assessoria de imprensa</p>
-</div>
+      {/* NOTICIAS */}
+      <section className="p-5 flex-grow">
+        <div className="flex">
+          <div>
+            <Link href="/uniaoQuebraMola">
+              <div className="flex justify-left">
+                <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
+              </div>
+              <p className="text-custom-blue">img da partida</p>
+            </Link>
+          </div>
+          <div className="ml-4">
+            <h1 className="text-3xl font-bold text-custom-blue mt-10">
+              <Link href="/uniaoQuebraMola" className="text-custom-blue hover:text-custom-gold" style={{ textDecoration: 'underline' }}>
+                União x Quebra Mola
+              </Link>
+            </h1>
+            <p className="text-xs text-custom-blue">20/04/2024 - Assessoria de imprensa</p>
+          </div>
+        </div>
+      </section>
 
-  </div>
-</section>
 
-<hr className="border-1 text-custom-gold w-full mt-5" />
+      <hr className="border-1 text-custom-gold w-full mt-5" />
 
-<section className="p-5 flex-grow">
-  <div className="flex">
-    <div>
-      <div className="flex justify-left">
-        <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
-      </div>
-      <p className="text-custom-blue">img da partida</p>
-    </div>
-    <div className="ml-4">
-      <h1 className="text-3xl font-bold text-custom-blue mt-10">
-        <Link href="/uniaoXIGuerreiros" className="text-custom-blue hover:text-custom-gold">
-          União x XI Guerreiros
-        </Link>
-      </h1>
-      <p className="text-xs text-custom-blue">13/04/2024 - Assessoria de imprensa</p>
-    </div>
-  </div>
-</section>
+      <section className="p-5 flex-grow">
+        <div className="flex">
+          <div>
+            <Link href="/uniaoXIGuerreiros">
+              <div>
+                <div className="flex justify-left">
+                  <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
+                </div>
+                <p className="text-custom-blue">img da partida</p>
+              </div>
+            </Link>
+          </div>
+          <div className="ml-4">
+            <h1 className="text-3xl font-bold text-custom-blue mt-10">
+              <Link href="/uniaoXIGuerreiros" className="text-custom-blue hover:text-custom-gold" style={{ textDecoration: 'underline' }}>
+                União x XI Guerreiros
+              </Link>
+            </h1>
+            <p className="text-xs text-custom-blue">13/04/2024 - Assessoria de imprensa</p>
+          </div>
+        </div>
+      </section>
 
-<hr className="border-1 text-custom-gold w-full mt-5" />
 
-<section className="p-5 flex-grow">
-  <div className="flex">
-    <div>
-      <div className="flex justify-left">
-        <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
-      </div>
-      <p className="text-custom-blue">img da partida</p>
-    </div>
-    <div className="ml-4"> {/* Adicionando margem para o texto */}
-      <h1 className="text-3xl font-bold text-custom-blue mt-10">
-        <Link href="/uniaoInter07" className="text-custom-blue hover:text-custom-gold">
-          União x Inter 07
-        </Link>
-      </h1>
-      <p className="text-xs text-custom-blue">06/04/2024 - Assessoria de imprensa</p>
-    </div>
-  </div>
-</section>
+      <hr className="border-1 text-custom-gold w-full mt-5" />
 
-<hr className="border-1 text-custom-gold w-full mt-5" />
+      <section className="p-5 flex-grow">
+        <div className="flex">
+          <div>
+            <Link href="/uniaoInter07">
+              <div>
+                <div className="flex justify-left">
+                  <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
+                </div>
+                <p className="text-custom-blue">img da partida</p>
+              </div>
+            </Link>
+          </div>
+          <div className="ml-4">
+            <h1 className="text-3xl font-bold mt-10">
+              <Link href="/uniaoInter07" className="text-custom-blue hover:text-custom-gold" style={{ textDecoration: 'underline' }}>
+                União x Inter 07
+              </Link>
+            </h1>
+            <p className="text-xs text-custom-blue">06/04/2024 - Assessoria de imprensa</p>
+          </div>
+        </div>
+      </section>
 
-<section className="p-5 flex-grow">
-  <div className="flex">
-    <div>
-      <div className="flex justify-left">
-        <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
-      </div>
-      <p className="text-custom-blue">img da partida</p>
-    </div>
-    <div className="ml-4"> {/* Adicionando margem para o texto */}
-      <h1 className="text-3xl font-bold text-custom-blue mt-10">
-        <Link href="/uniaoColombia" className="text-custom-blue hover:text-custom-gold">
-          União x Colombia
-        </Link>
-      </h1>
-      <p className="text-xs text-custom-blue">30/03/2024 - Assessoria de imprensa</p>
-    </div>
-  </div>
-</section>
+
+      <hr className="border-1 text-custom-gold w-full mt-5" />
+
+      <section className="p-5 flex-grow">
+        <div className="flex">
+          <div>
+            <Link href="/uniaoColombia">
+              <div>
+                <div className="flex justify-left">
+                  <Image src="/elencoatual.jpeg" alt="Imagem" width={300} height={300} />
+                </div>
+                <p className="text-custom-blue">img da partida</p>
+              </div>
+            </Link>
+          </div>
+          <div className="ml-4"> {/* Adicionando margem para o texto */}
+            <h1 className="text-3xl font-bold text-custom-blue mt-10">
+              <Link href="/uniaoColombia" className="text-custom-blue hover:text-custom-gold" style={{ textDecoration: 'underline' }}>
+                União x Colombia
+              </Link>
+            </h1>
+            <p className="text-xs text-custom-blue">30/03/2024 - Assessoria de imprensa</p>
+          </div>
+        </div>
+      </section>
+
 
 
 
